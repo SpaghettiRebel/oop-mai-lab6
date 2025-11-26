@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/liblab6lib.a CMakeFiles/lab6lib.dir/src/combat_visitor.cpp.o CMakeFiles/lab6lib.dir/src/dungeon.cpp.o CMakeFiles/lab6lib.dir/src/event_manager.cpp.o CMakeFiles/lab6lib.dir/src/factory.cpp.o CMakeFiles/lab6lib.dir/src/npc.cpp.o
+/usr/bin/ranlib lib/liblab6lib.a
