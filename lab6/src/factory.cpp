@@ -1,4 +1,3 @@
-// src/factory.cpp
 #include "factory.hpp"
 #include "npc.hpp"
 #include "npc_types.hpp"

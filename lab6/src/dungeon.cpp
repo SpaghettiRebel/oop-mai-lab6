@@ -1,4 +1,3 @@
-// src/dungeon.cpp
 #include "dungeon.hpp"
 #include "factory.hpp"
 #include "observer.hpp"

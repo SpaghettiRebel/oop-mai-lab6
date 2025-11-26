@@ -10,7 +10,7 @@ static bool wantsKill(const std::string &A, const std::string &B) noexcept {
     return false;
 }
 
-CombatVisitor::CombatVisitor(NPCBase* attacker) noexcept
+CombatVisitor::CombatVisitor(NPCBase* attacker) noexcept 
     : attacker_(attacker), victimDies_(false), attackerDies_(false) {}
 
 bool CombatVisitor::victimDies() const noexcept { return victimDies_; }

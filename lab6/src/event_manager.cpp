@@ -1,4 +1,3 @@
-// src/event_manager.cpp
 #include "observer.hpp"
 
 void EventManager::subscribe(std::shared_ptr<IObserver> obs) {
