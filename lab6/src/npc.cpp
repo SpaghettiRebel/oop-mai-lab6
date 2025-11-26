@@ -3,7 +3,6 @@
 #include "npc_types.hpp"
 #include <utility>
 
-// Реализация PIMPL
 struct NPCBase::Impl {
     std::string name;
     double x{0.0};

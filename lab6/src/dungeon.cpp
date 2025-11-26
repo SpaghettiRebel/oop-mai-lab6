@@ -77,11 +77,9 @@ void Dungeon::runCombat(double range) {
     size_t n = npcs.size();
     if (n < 2) return;
 
-    // snapshot who is alive at start of this combat pass
     std::vector<char> aliveAtStart(n, 0);
     for (size_t i = 0; i < n; ++i) aliveAtStart[i] = npcs[i]->alive() ? 1 : 0;
 
-    // willDie marks victims (may be set multiple times but we only log once per victim)
     std::vector<char> willDie(n, 0);
 
     // store first killer for each victim (empty => not yet killed/logged)
@@ -96,7 +94,7 @@ void Dungeon::runCombat(double range) {
         if (!aliveAtStart[i]) continue; // dead at start -> doesn't participate
         for (size_t j = i + 1; j < n; ++j) {
             if (!aliveAtStart[j]) continue;
-            // distance check
+
             double dx = npcs[i]->x() - npcs[j]->x();
             double dy = npcs[i]->y() - npcs[j]->y();
             if (dx*dx + dy*dy > r2) continue;
